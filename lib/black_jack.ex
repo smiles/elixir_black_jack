@@ -1,18 +1,9 @@
 defmodule BlackJack do
-  @moduledoc """
-  Documentation for BlackJack.
-  """
 
-  @doc """
-  Hello world.
+  use Application
 
-  ## Examples
-
-      iex> BlackJack.hello
-      :world
-
-  """
-  def hello do
-    :world
+  def start(_type, _args) do
+    BlackJack.BlackJackEngine.start
   end
+
 end
